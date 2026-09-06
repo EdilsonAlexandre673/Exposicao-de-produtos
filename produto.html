@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Detalhes do produto."
+    >
+
+    <title>Produto | Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container header-container">
+
+            <a href="index.html" class="logo">
+                Store
+            </a>
+
+            <nav class="desktop-nav">
+
+                <a href="index.html" class="nav-link">
+                    Início
+                </a>
+
+                <a
+                    href="produtos.html"
+                    class="nav-link active"
+                >
+                    Produtos
+                </a>
+
+                <a href="sobre.html" class="nav-link">
+                    Sobre
+                </a>
+
+                <a href="contacto.html" class="nav-link">
+                    Contacto
+                </a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <button
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    type="button"
+                    aria-label="Alterar tema"
+                >
+                    ◐
+                </button>
+
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    type="button"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <nav
+            class="mobile-menu"
+            id="mobile-menu"
+            hidden
+        >
+
+            <a href="index.html" class="mobile-nav-link">
+                Início
+            </a>
+
+            <a
+                href="produtos.html"
+                class="mobile-nav-link active"
+            >
+                Produtos
+            </a>
+
+            <a href="sobre.html" class="mobile-nav-link">
+                Sobre
+            </a>
+
+            <a href="contacto.html" class="mobile-nav-link">
+                Contacto
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="product-detail">
+
+            <div
+                class="container"
+                id="product-detail"
+            >
+            </div>
+
+
+            <div
+                class="container"
+                id="product-not-found"
+                hidden
+            >
+
+                <div class="empty-state">
+
+                    <h1>
+                        Produto não encontrado
+                    </h1>
+
+                    <p>
+                        O produto que procura não está disponível.
+                    </p>
+
+                    <a
+                        href="produtos.html"
+                        class="button button-primary"
+                    >
+                        Ver produtos
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container footer-bottom">
+
+            <p>
+                &copy; 2026 Store. Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script
+        type="module"
+        src="js/app.js"
+    ></script>
+
+    <script
+        type="module"
+        src="js/product.js"
+    ></script>
+
+</body>
+
+</html>

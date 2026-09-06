@@ -1,247 +1,246 @@
 <!DOCTYPE html>
 <html lang="pt-MZ">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de exposicao</title>
+
+    <meta
+        name="description"
+        content="Exposição de produtos. Explore o catálogo e entre em contacto pelo WhatsApp."
+    >
+
+    <meta name="author" content="Edilson Alexandre">
+
+    <title>Store | Exposição de Produtos</title>
+
     <link rel="stylesheet" href="Estilos/style.css">
 </head>
-<body>
-     <header class="header">
-        <div class="container">
 
-            <a href="index.html" class="logo" aria-label="Página inicial">
-                Store<span>.</span>
+<body>
+
+    <header class="header">
+
+        <div class="container header-container">
+
+            <a href="index.html" class="logo">
+                Store
             </a>
 
-            <nav class="navigation" aria-label="Navegação principal">
-                <ul class="navigation-list">
-                    <li>
-                        <a href="index.html" class="active">Início</a>
-                    </li>
-                    <li>
-                        <a href="produtos.html">Produtos</a>
-                    </li>
-                    <li>
-                        <a href="sobre.html">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
+            <nav class="desktop-nav" aria-label="Navegação principal">
+
+                <a href="index.html" class="nav-link active">
+                    Início
+                </a>
+
+                <a href="produtos.html" class="nav-link">
+                    Produtos
+                </a>
+
+                <a href="sobre.html" class="nav-link">
+                    Sobre
+                </a>
+
+                <a href="contacto.html" class="nav-link">
+                    Contacto
+                </a>
+
             </nav>
 
+            <div class="header-actions">
+
+                <button
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    type="button"
+                    aria-label="Alterar tema"
+                >
+                    ◐
+                </button>
+
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    type="button"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    ☰
+                </button>
+
+            </div>
+
         </div>
+
+        <nav
+            class="mobile-menu"
+            id="mobile-menu"
+            aria-label="Navegação mobile"
+            hidden
+        >
+
+            <a href="index.html" class="mobile-nav-link active">
+                Início
+            </a>
+
+            <a href="produtos.html" class="mobile-nav-link">
+                Produtos
+            </a>
+
+            <a href="sobre.html" class="mobile-nav-link">
+                Sobre
+            </a>
+
+            <a href="contacto.html" class="mobile-nav-link">
+                Contacto
+            </a>
+
+        </nav>
+
     </header>
+
 
     <main>
 
         <section class="hero">
-            <div class="container">
+
+            <div class="container hero-container">
 
                 <div class="hero-content">
-                    <p class="section-label">EXPOSIÇÃO DE PRODUTOS</p>
+
+                    <span class="section-label">
+                        EXPOSIÇÃO DE PRODUTOS
+                    </span>
 
                     <h1>
-                        Encontre o produto
-                        <br>
-                        que procura.
+                        Encontre o produto certo para si.
                     </h1>
 
-                    <p class="hero-description">
-                        Explore produtos selecionados e entre diretamente
-                        em contacto com o anunciante.
+                    <p>
+                        Explore a nossa seleção de produtos,
+                        conheça os detalhes e entre em contacto
+                        diretamente pelo WhatsApp.
                     </p>
 
-                    <a href="produtos.html" class="button">
-                        Explorar produtos
-                    </a>
+                    <div class="hero-actions">
+
+                        <a
+                            href="produtos.html"
+                            class="button button-primary"
+                        >
+                            Explorar produtos
+                        </a>
+
+                        <a
+                            href="#categorias"
+                            class="button button-secondary"
+                        >
+                            Ver categorias
+                        </a>
+
+                    </div>
+
                 </div>
 
             </div>
+
         </section>
+
+
+        <section class="quick-search">
+
+            <div class="container">
+
+                <div class="search-box">
+
+                    <label for="home-search">
+                        Pesquisar produtos
+                    </label>
+
+                    <div class="search-input-wrapper">
+
+                        <span class="search-icon">
+                            ⌕
+                        </span>
+
+                        <input
+                            type="search"
+                            id="home-search"
+                            placeholder="O que está procurando?"
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
 
         <section class="featured-products">
+
             <div class="container">
 
-                <header class="section-header">
+                <div class="section-header">
+
                     <div>
-                        <p class="section-label">DESTAQUES</p>
-                        <h2>Produtos em destaque</h2>
+
+                        <span class="section-label">
+                            DESTAQUES
+                        </span>
+
+                        <h2>
+                            Produtos em destaque
+                        </h2>
+
                     </div>
 
-                    <a href="produtos.html" class="text-link">
+                    <a
+                        href="produtos.html"
+                        class="section-link"
+                    >
                         Ver todos
                     </a>
-                </header>
-
-                <div class="products-grid">
-
-                    <article class="product-card">
-                        <a href="produto.html?id=1" class="product-image">
-                            <img
-                                src="images/produto-1.jpg"
-                                alt="Smartphone X1"
-                                loading="lazy"
-                            >
-                        </a>
-
-                        <div class="product-info">
-                            <p class="product-category">Eletrónicos</p>
-
-                            <h3>
-                                <a href="produto.html?id=1">
-                                    Smartphone X1
-                                </a>
-                            </h3>
-
-                            <p class="product-description">
-                                Smartphone moderno com design minimalista
-                                e alto desempenho.
-                            </p>
-
-                            <div class="product-footer">
-                                <span class="product-price">25.000 MT</span>
-
-                                <a
-                                    href="https://wa.me/258877815890"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="whatsapp-button"
-                                >
-                                    WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="product-card">
-                        <a href="produto.html?id=2" class="product-image">
-                            <img
-                                src="images/produto-2.jpg"
-                                alt="Relógio Classic"
-                                loading="lazy"
-                            >
-                        </a>
-
-                        <div class="product-info">
-                            <p class="product-category">Acessórios</p>
-
-                            <h3>
-                                <a href="produto.html?id=2">
-                                    Relógio Classic
-                                </a>
-                            </h3>
-
-                            <p class="product-description">
-                                Relógio elegante com design simples
-                                para diferentes ocasiões.
-                            </p>
-
-                            <div class="product-footer">
-                                <span class="product-price">8.500 MT</span>
-
-                                <a
-                                    href="https://wa.me/258877815890"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="whatsapp-button"
-                                >
-                                    WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="product-card">
-                        <a href="produto.html?id=3" class="product-image">
-                            <img
-                                src="images/produto-3.jpg"
-                                alt="T-Shirt Essential"
-                                loading="lazy"
-                            >
-                        </a>
-
-                        <div class="product-info">
-                            <p class="product-category">Roupas</p>
-
-                            <h3>
-                                <a href="produto.html?id=3">
-                                    T-Shirt Essential
-                                </a>
-                            </h3>
-
-                            <p class="product-description">
-                                T-shirt confortável com design simples
-                                e versátil para o dia a dia.
-                            </p>
-
-                            <div class="product-footer">
-                                <span class="product-price">1.500 MT</span>
-
-                                <a
-                                    href="https://wa.me/258877815890"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="whatsapp-button"
-                                >
-                                    WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="product-card">
-                        <a href="produto.html?id=4" class="product-image">
-                            <img
-                                src="imagens/Placa Wi-Fi.jpg"
-                                alt="Mochila Urban"
-                                loading="lazy"
-                            >
-                        </a>
-
-                        <div class="product-info">
-                            <p class="product-category">Acessórios</p>
-
-                            <h3>
-                                <a href="produto.html?id=4">
-                                    Adaptador USB
-                                </a>
-                            </h3>
-
-                            <p class="product-description">
-                                Conecte a internet a o seu combutador com o adaptador, velocidade de 360Mb/s. Super Rapido
-                            </p>
-
-                            <div class="product-footer">
-                                <span class="product-price">3.500 MT</span>
-
-                                <a
-                                    href="https://wa.me/258877815890"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="whatsapp-button"
-                                >
-                                    Contacte-nos pelo WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </article>
 
                 </div>
 
+                <div
+                    class="products-grid"
+                    id="featured-products"
+                >
+                </div>
+
             </div>
+
         </section>
 
-        <section class="categories">
+
+        <section
+            class="categories"
+            id="categorias"
+        >
+
             <div class="container">
 
-                <header class="section-header">
+                <div class="section-header">
+
                     <div>
-                        <p class="section-label">CATEGORIAS</p>
-                        <h2>Explore por categoria</h2>
+
+                        <span class="section-label">
+                            CATEGORIAS
+                        </span>
+
+                        <h2>
+                            Explore por categoria
+                        </h2>
+
                     </div>
-                </header>
+
+                </div>
+
 
                 <div class="categories-grid">
 
@@ -249,130 +248,269 @@
                         href="produtos.html?categoria=eletronicos"
                         class="category-card"
                     >
-                        <h3>Eletrónicos</h3>
-                        <p>Explore dispositivos e produtos tecnológicos.</p>
+
+                        <span class="category-icon">
+                            ◉
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Eletrónicos
+                            </h3>
+
+                            <p>
+                                Smartphones, computadores e outros.
+                            </p>
+
+                        </div>
+
                     </a>
+
 
                     <a
                         href="produtos.html?categoria=roupas"
                         class="category-card"
                     >
-                        <h3>Roupas</h3>
-                        <p>Encontre peças para diferentes estilos.</p>
+
+                        <span class="category-icon">
+                            ◌
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Roupas
+                            </h3>
+
+                            <p>
+                                Peças para diferentes estilos.
+                            </p>
+
+                        </div>
+
                     </a>
+
 
                     <a
                         href="produtos.html?categoria=acessorios"
                         class="category-card"
                     >
-                        <h3>Acessórios</h3>
-                        <p>Pequenos detalhes para complementar o seu estilo.</p>
+
+                        <span class="category-icon">
+                            ◇
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Acessórios
+                            </h3>
+
+                            <p>
+                                Produtos para complementar o seu estilo.
+                            </p>
+
+                        </div>
+
                     </a>
+
 
                     <a
                         href="produtos.html?categoria=outros"
                         class="category-card"
                     >
-                        <h3>Outros</h3>
-                        <p>Descubra outros produtos disponíveis.</p>
+
+                        <span class="category-icon">
+                            +
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Outros
+                            </h3>
+
+                            <p>
+                                Descubra outros produtos disponíveis.
+                            </p>
+
+                        </div>
+
                     </a>
 
                 </div>
 
             </div>
+
         </section>
 
+
         <section class="about-preview">
-            <div class="container">
+
+            <div class="container about-container">
 
                 <div class="about-content">
 
-                    <div class="about-text">
-                        <p class="section-label">SOBRE</p>
+                    <span class="section-label">
+                        SOBRE A STORE
+                    </span>
 
-                        <h2>
-                            Uma forma simples
-                            de encontrar produtos.
-                        </h2>
+                    <h2>
+                        Produtos apresentados de forma simples.
+                    </h2>
 
-                        <p>
-                            O nosso objetivo é apresentar produtos de forma
-                            clara e facilitar o contacto entre clientes
-                            e anunciantes.
-                        </p>
+                    <p>
+                        A Store foi criada para facilitar a descoberta
+                        de produtos. Explore o catálogo, veja os detalhes
+                        e fale diretamente com o anunciante.
+                    </p>
 
-                        <a href="sobre.html" class="text-link">
-                            Saiba mais
-                        </a>
+                    <a
+                        href="sobre.html"
+                        class="text-link"
+                    >
+                        Conhecer mais
+                    </a>
+
+                </div>
+
+
+                <div class="about-stats">
+
+                    <div class="stat-card">
+                        <strong>04+</strong>
+                        <span>Produtos</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>04</strong>
+                        <span>Categorias</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>24h</strong>
+                        <span>Contacto</span>
                     </div>
 
                 </div>
 
             </div>
+
         </section>
 
-        <section class="contact-cta">
-            <div class="container">
 
-                <div class="contact-content">
-                    <p class="section-label">CONTACTO</p>
+        <section class="contact-cta">
+
+            <div class="container contact-container">
+
+                <div>
+
+                    <span class="section-label">
+                        CONTACTO
+                    </span>
 
                     <h2>
-                        Encontrou o que procura?
+                        Encontrou algo que gostou?
                     </h2>
 
                     <p>
-                        Entre em contacto diretamente com o anunciante
-                        através do WhatsApp.
+                        Fale diretamente pelo WhatsApp para
+                        saber mais sobre o produto.
                     </p>
 
-                    <a
-                        href="https://wa.me/258877815890"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="whatsapp-button"
-                    >
-                        Falar pelo WhatsApp
-                    </a>
                 </div>
 
+                <a
+                    href="https://wa.me/258877815890"
+                    class="whatsapp-button whatsapp-large"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Falar pelo WhatsApp
+                </a>
+
             </div>
+
         </section>
 
     </main>
 
+
     <footer class="footer">
-        <div class="container">
 
-            <div class="footer-content">
+        <div class="container footer-container">
 
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        Store<span>.</span>
-                    </a>
+            <div class="footer-brand">
 
-                    <p>
-                        Uma forma simples de descobrir produtos.
-                    </p>
-                </div>
+                <a href="index.html" class="logo">
+                    Store
+                </a>
 
-                <nav class="footer-navigation" aria-label="Navegação do rodapé">
+                <p>
+                    Exposição simples e moderna de produtos.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+
+                    <h3>Navegação</h3>
+
                     <a href="index.html">Início</a>
                     <a href="produtos.html">Produtos</a>
                     <a href="sobre.html">Sobre</a>
                     <a href="contacto.html">Contacto</a>
-                </nav>
 
-            </div>
+                </div>
 
-            <div class="footer-bottom">
-                <p>
-                    &copy; 2026 Store. Todos os direitos reservados.
-                </p>
+
+                <div>
+
+                    <h3>Categorias</h3>
+
+                    <a href="produtos.html?categoria=eletronicos">
+                        Eletrónicos
+                    </a>
+
+                    <a href="produtos.html?categoria=roupas">
+                        Roupas
+                    </a>
+
+                    <a href="produtos.html?categoria=acessorios">
+                        Acessórios
+                    </a>
+
+                    <a href="produtos.html?categoria=outros">
+                        Outros
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
+
+
+        <div class="container footer-bottom">
+
+            <p>
+                &copy; 2026 Store. Todos os direitos reservados.
+            </p>
+
+        </div>
+
     </footer>
 
+
+    <script
+        type="module"
+        src="js/app.js"
+    ></script>
+
 </body>
+
 </html>
