@@ -38,5 +38,25 @@ export const products = [
         image: "images/produto-4.jpg",
         description: "Mochila prática e resistente para trabalho, estudos e viagens.",
         featured: true
+    },
+     {
+        id: 5,
+        name: "Mochila Urban",
+        category: "acessorios",
+        categoryName: "Acessórios",
+        price: 3500,
+        image: "images/produto-5.jpg",
+        description: "Mochila prática e resistente para trabalho, estudos e viagens.",
+        featured: true
+    },
+     {
+        id: 6,
+        name: "Mochila Urban",
+        category: "acessorios",
+        categoryName: "Acessórios",
+        price: 3500,
+        image: "images/produto-6.jpg",
+        description: "Mochila prática e resistente para trabalho, estudos e viagens.",
+        featured: true
     }
 ];
